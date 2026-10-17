@@ -21,6 +21,7 @@ import { SectionHeading } from '../components/SectionHeading';
 import { categories } from '../data/categories';
 import { products } from '../data/products';
 import { demoNotes, serviceHighlights } from '../data/site';
+import { assetUrl } from '../lib/format';
 
 const featured = products.filter((product) => product.featured).slice(0, 8);
 
@@ -36,19 +37,19 @@ const editorialLinks = [
     label: 'Laptops & computers',
     note: 'Work, study and creative projects',
     href: '/shop?category=laptops',
-    image: '/images/products/laptop-graphite.webp',
+    image: assetUrl('/images/products/laptop-graphite.webp'),
   },
   {
     label: 'Audio & headphones',
     note: 'Sound for focus and downtime',
     href: '/shop?category=audio',
-    image: '/images/products/headphones.webp',
+    image: assetUrl('/images/products/headphones.webp'),
   },
   {
     label: 'Accessories',
     note: 'The extras that keep devices ready',
     href: '/shop?category=accessories',
-    image: '/images/products/accessories.webp',
+    image: assetUrl('/images/products/accessories.webp'),
   },
 ];
 
@@ -124,7 +125,7 @@ export function HomePage() {
             <div className="relative">
               <div className="relative overflow-hidden rounded-xl border border-ink/10 bg-[#eeece8] shadow-[0_40px_80px_-48px_rgba(10,27,46,0.45)]">
                 <img
-                  src="/images/hero-devices.webp"
+                  src={assetUrl('/images/hero-devices.webp')}
                   alt="Laptop, smartphone, wireless headphones and smartwatch arranged on a light studio platform"
                   width={1600}
                   height={893}
@@ -273,7 +274,7 @@ export function HomePage() {
               <div className="grid grid-cols-[1.15fr_0.85fr] gap-3 sm:gap-4">
                 <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5">
                   <img
-                    src="/images/editorial-audio.webp"
+                    src={assetUrl('/images/editorial-audio.webp')}
                     alt="Headphones and a smartwatch arranged on sculptural display platforms"
                     loading="lazy"
                     className="h-full min-h-[280px] w-full object-cover sm:min-h-[420px]"
@@ -282,7 +283,7 @@ export function HomePage() {
                 <div className="flex flex-col gap-3 sm:gap-4">
                   <div className="overflow-hidden rounded-xl border border-white/10 bg-white/5">
                     <img
-                      src="/images/products/laptop-graphite.webp"
+                      src={assetUrl('/images/products/laptop-graphite.webp')}
                       alt="Graphite laptop open on a light desk"
                       loading="lazy"
                       className="aspect-square w-full object-cover"
@@ -359,7 +360,7 @@ export function HomePage() {
             <Reveal className="order-2 lg:order-1">
               <div className="relative overflow-hidden rounded-xl border border-ink/10">
                 <img
-                  src="/images/about-range.webp"
+                  src={assetUrl('/images/about-range.webp')}
                   alt="Power bank, cable, charger and phone case arranged on a light studio surface"
                   loading="lazy"
                   className="aspect-[5/4] w-full object-cover"

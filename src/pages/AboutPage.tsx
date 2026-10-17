@@ -11,6 +11,7 @@ import { DemoNote } from '../components/DemoNote';
 import { PageHeader } from '../components/PageHeader';
 import { Reveal } from '../components/Reveal';
 import { demoNotes } from '../data/site';
+import { assetUrl } from '../lib/format';
 import { useDocumentTitle } from '../lib/hooks';
 
 const steps = [
@@ -118,7 +119,7 @@ export function AboutPage() {
               <div className="relative">
                 <div className="overflow-hidden rounded-xl border border-line">
                   <img
-                    src="/images/about-workspace.webp"
+                    src={assetUrl('/images/about-workspace.webp')}
                     alt="Laptop and smartphone on a light studio surface"
                     loading="lazy"
                     className="aspect-[5/4] w-full object-cover"
@@ -127,7 +128,7 @@ export function AboutPage() {
                 <div className="mt-3 grid grid-cols-[1fr_0.7fr] gap-3">
                   <div className="overflow-hidden rounded-xl border border-line">
                     <img
-                      src="/images/editorial-audio.webp"
+                      src={assetUrl('/images/editorial-audio.webp')}
                       alt="Headphones and a smartwatch on display platforms"
                       loading="lazy"
                       className="aspect-[4/3] w-full object-cover"

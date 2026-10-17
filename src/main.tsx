@@ -7,12 +7,17 @@ import App from './App';
 import { CartProvider } from './lib/cart';
 import './index.css';
 
+const rawBase = import.meta.env.BASE_URL.replace(/\/+$/, '');
+const routerBasename =
+  rawBase && window.location.pathname.startsWith(rawBase) ? rawBase : '/';
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={routerBasename}>
       <CartProvider>
         <App />
       </CartProvider>
     </BrowserRouter>
   </React.StrictMode>,
 );
+
