@@ -1,0 +1,12 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.tmp-img
+.tmp-qa
+.env
+.env.*
+!.env.example
+npm-debug.log*
+tsconfig.tsbuildinfo
