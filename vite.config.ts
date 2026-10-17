@@ -19,6 +19,11 @@ export default defineConfig({
             source: indexHtml.source,
           });
         }
+        this.emitFile({
+          type: 'asset',
+          fileName: '.nojekyll',
+          source: '',
+        });
       },
     },
   ],

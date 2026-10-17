@@ -32,6 +32,15 @@ export function isPhone(value: string): boolean {
 
 /** Prefixes a public asset path with Vite's configured BASE_URL. */
 export function assetUrl(path: string): string {
-  return `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
+  if (/^(?:[a-z]+:)?\/\//i.test(path) || path.startsWith('data:')) {
+    return path;
+  }
+  const base = import.meta.env.BASE_URL.endsWith('/')
+    ? import.meta.env.BASE_URL
+    : `${import.meta.env.BASE_URL}/`;
+  if (path.startsWith(base)) {
+    return path;
+  }
+  return `${base}${path.replace(/^\/+/, '')}`;
 }
 
