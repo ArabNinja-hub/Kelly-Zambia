@@ -6,12 +6,14 @@
  * change category names, copy, imagery or order.
  */
 
+import { assetUrl } from '../lib/format';
+
 export const categories = [
   {
     slug: 'smartphones',
     name: 'Smartphones',
     shortName: 'Phones',
-    image: '/images/products/smartphone-navy.webp',
+    image: assetUrl('/images/products/smartphone-navy.webp'),
     imageAlt: 'Modern navy smartphone photographed on a light studio background',
     description: 'Everyday phones for staying connected, capturing moments and getting things done.',
     blurb: 'Connect, capture and stay on top of every day.',
@@ -20,7 +22,7 @@ export const categories = [
     slug: 'laptops',
     name: 'Laptops & Computers',
     shortName: 'Laptops',
-    image: '/images/products/laptop-silver.webp',
+    image: assetUrl('/images/products/laptop-silver.webp'),
     imageAlt: 'Slim silver laptop open on a light studio background',
     description: 'Portable computers for work, study, creativity and everything in between.',
     blurb: 'Work, study and create on the move.',
@@ -29,7 +31,7 @@ export const categories = [
     slug: 'tablets',
     name: 'Tablets',
     shortName: 'Tablets',
-    image: '/images/products/tablet.webp',
+    image: assetUrl('/images/products/tablet.webp'),
     imageAlt: 'Navy tablet with a stylus on a warm grey studio background',
     description: 'Lightweight screens for reading, notes, streaming and productivity.',
     blurb: 'A bigger canvas for notes, ideas and entertainment.',
@@ -38,7 +40,7 @@ export const categories = [
     slug: 'audio',
     name: 'Audio & Headphones',
     shortName: 'Audio',
-    image: '/images/products/headphones.webp',
+    image: assetUrl('/images/products/headphones.webp'),
     imageAlt: 'Matte black over-ear headphones with navy cushions',
     description: 'Headphones, earbuds and speakers for work, travel and time out.',
     blurb: 'Sound for focus, travel and time out.',
@@ -47,7 +49,7 @@ export const categories = [
     slug: 'smartwatches',
     name: 'Smartwatches',
     shortName: 'Watches',
-    image: '/images/products/smartwatch.webp',
+    image: assetUrl('/images/products/smartwatch.webp'),
     imageAlt: 'Smartwatch with a navy sport band and dark case',
     description: 'Wearables that keep useful information within a glance.',
     blurb: 'Useful information, right on your wrist.',
@@ -56,7 +58,7 @@ export const categories = [
     slug: 'accessories',
     name: 'Accessories',
     shortName: 'Accessories',
-    image: '/images/products/accessories.webp',
+    image: assetUrl('/images/products/accessories.webp'),
     imageAlt: 'Flat lay of a power bank, cable, charger and phone case',
     description: 'Chargers, cables, cases, power banks and the small things that matter.',
     blurb: 'The everyday extras that keep devices ready.',

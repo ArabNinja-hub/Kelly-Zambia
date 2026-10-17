@@ -19,6 +19,7 @@
  * ==========================================================================
  */
 
+import { assetUrl } from '../lib/format';
 import type { CategorySlug } from './categories';
 
 export interface ProductSpec {
@@ -48,7 +49,7 @@ export const products: Product[] = [
     name: 'Nova X Pro',
     category: 'smartphones',
     price: 18499,
-    image: '/images/products/smartphone-navy.webp',
+    image: assetUrl('/images/products/smartphone-navy.webp'),
     imageAlt: 'Nova X Pro smartphone in deep navy, shown from the back',
     tagline: '6.7″ AMOLED · 256 GB · Triple camera',
     description:
@@ -75,7 +76,7 @@ export const products: Product[] = [
     name: 'AeroBook 14',
     category: 'laptops',
     price: 23999,
-    image: '/images/products/laptop-silver.webp',
+    image: assetUrl('/images/products/laptop-silver.webp'),
     imageAlt: 'AeroBook 14 laptop in silver, open and angled',
     tagline: '14″ display · 16 GB memory · 512 GB SSD',
     description:
@@ -102,7 +103,7 @@ export const products: Product[] = [
     name: 'AeroBook Pro 16',
     category: 'laptops',
     price: 32999,
-    image: '/images/products/laptop-graphite.webp',
+    image: assetUrl('/images/products/laptop-graphite.webp'),
     imageAlt: 'AeroBook Pro 16 laptop in graphite, open on a desk',
     tagline: '16″ display · 16 GB memory · 1 TB SSD',
     description:
@@ -129,7 +130,7 @@ export const products: Product[] = [
     name: 'Luna Tab 11',
     category: 'tablets',
     price: 11999,
-    image: '/images/products/tablet.webp',
+    image: assetUrl('/images/products/tablet.webp'),
     imageAlt: 'Luna Tab 11 tablet in navy with a stylus beside it',
     tagline: '11″ display · 256 GB · Stylus support',
     description:
@@ -156,7 +157,7 @@ export const products: Product[] = [
     name: 'Pulse Studio Headphones',
     category: 'audio',
     price: 3299,
-    image: '/images/products/headphones.webp',
+    image: assetUrl('/images/products/headphones.webp'),
     imageAlt: 'Pulse Studio over-ear wireless headphones in black and navy',
     tagline: 'Wireless over-ear · Active noise cancellation',
     description:
@@ -183,7 +184,7 @@ export const products: Product[] = [
     name: 'Pulse Air Earbuds',
     category: 'audio',
     price: 1899,
-    image: '/images/products/earbuds.webp',
+    image: assetUrl('/images/products/earbuds.webp'),
     imageAlt: 'Pulse Air wireless earbuds resting in an open navy charging case',
     tagline: 'True wireless · Compact charging case',
     description:
@@ -210,7 +211,7 @@ export const products: Product[] = [
     name: 'Wave Portable Speaker',
     category: 'audio',
     price: 2199,
-    image: '/images/products/speaker.webp',
+    image: assetUrl('/images/products/speaker.webp'),
     imageAlt: 'Wave portable Bluetooth speaker in navy fabric',
     tagline: 'Portable Bluetooth speaker · 12-hour battery',
     description:
@@ -237,7 +238,7 @@ export const products: Product[] = [
     name: 'Orbit Watch Series 5',
     category: 'smartwatches',
     price: 4499,
-    image: '/images/products/smartwatch.webp',
+    image: assetUrl('/images/products/smartwatch.webp'),
     imageAlt: 'Orbit Watch Series 5 smartwatch with a navy sport band',
     tagline: 'Always-on display · Health tracking · GPS',
     description:
@@ -264,7 +265,7 @@ export const products: Product[] = [
     name: 'Volt 20K Power Bank',
     category: 'accessories',
     price: 899,
-    image: '/images/products/power-bank.webp',
+    image: assetUrl('/images/products/power-bank.webp'),
     imageAlt: 'Volt 20K power bank in navy with USB-C and USB-A ports',
     tagline: '20,000 mAh · Dual USB-C · Fast charge',
     description:
@@ -291,7 +292,7 @@ export const products: Product[] = [
     name: 'Braided USB-C Cable',
     category: 'accessories',
     price: 249,
-    image: '/images/products/usb-c-cable.webp',
+    image: assetUrl('/images/products/usb-c-cable.webp'),
     imageAlt: 'Coiled navy braided USB-C cable with metal connectors',
     tagline: '1.5 m · Braided · 100 W charging',
     description:
@@ -317,7 +318,7 @@ export const products: Product[] = [
     name: 'Compact 30W Charger',
     category: 'accessories',
     price: 449,
-    image: '/images/products/charger.webp',
+    image: assetUrl('/images/products/charger.webp'),
     imageAlt: 'Compact white USB-C wall charger on a light surface',
     tagline: 'USB-C · 30 W · Foldable pins',
     description:
@@ -343,7 +344,7 @@ export const products: Product[] = [
     name: 'Shield Silicone Case',
     category: 'accessories',
     price: 349,
-    image: '/images/products/phone-case.webp',
+    image: assetUrl('/images/products/phone-case.webp'),
     imageAlt: 'Navy silicone phone case shown from the back',
     tagline: 'Soft-touch silicone · Raised camera rim',
     description:

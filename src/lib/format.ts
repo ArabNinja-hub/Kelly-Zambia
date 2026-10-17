@@ -29,3 +29,9 @@ export function isPhone(value: string): boolean {
   const digits = value.replace(/[^\d]/g, '');
   return digits.length >= 9 && digits.length <= 15 && /^\+?[\d\s().-]+$/.test(value.trim());
 }
+
+/** Prefixes a public asset path with Vite's configured BASE_URL. */
+export function assetUrl(path: string): string {
+  return `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
+}
+
