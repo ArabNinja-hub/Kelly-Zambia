@@ -34,8 +34,14 @@ jobs:
       - name: Build production bundle
         run: npm run build
 
-      - name: Ensure SPA 404 fallback exists
-        run: cp dist/index.html dist/404.html
+      - name: Verify compiled production output
+        run: |
+          cp -f dist/index.html dist/404.html
+          touch dist/.nojekyll
+          test -f dist/index.html
+          test -f dist/404.html
+          grep -q "/Kelly-Zambia/assets/" dist/index.html
+          ! grep -q "/src/main.tsx" dist/index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
